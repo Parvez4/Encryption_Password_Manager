@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+.box{
+    width: 400px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 30px -20px #000;
+    text-align: center;
+}
+.box h2{
+    font-size: 40px;
+}
+.box .input_box{
+    width: 100%;
+    margin: 30px 0px;
+    position:relative;
+}
+.box .input_box input{
+    width: 90%;
+    padding: 12px 20px;
+    font-size: 25px;
+    background-color: #f2f2f2;
+    border-radius: 200px;
+    border:none;
+    outline: none;
+}
+.box .input_box label{
+    position: absolute;
+    font-size: 25px;
+    top: 12px;
+    left:18px;
+    color:#7a7a7a;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.box .input_box input:focus + label,
+.box .input_box input:valid + label{
+    font-size: 16px;
+    color:blueviolet;
+    top:-22px;
+}
+/* --------------------password strength-------------- */
+.password_strength_box{
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    place-items: center;
+    margin: 10px auto;
+}
+.password_strength_box .password_strength{
+    width: 100%;
+}
+.password_strength .text{
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* color:red; */
+}
+.password_strength .line_box{
+    background-color: #f2f2f2;
+}
+.password_strength .line{
+    width: 0%;
+    height: 5px;
+    border-radius: 100px;
+    background-color: red;
+    transition: 0.3s;
+}
+.tool_tip_box{
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+}
+.tool_tip_box span{
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 2px solid #000;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+.tool_tip_box .tool_tip{
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    right: -100px;
+    background-color: #f6f6f6;
+    padding: 10px 30px;
+    z-index: 10;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 1.5;
+    box-shadow: 0px 5px 10px -5px #000;
+    pointer-events:none;
+    opacity: 0;
+    transition: 0.2s;
+    transition-delay: 0.5s;
+}
+.tool_tip_box:hover .tool_tip{
+    opacity:1;
+}
+.tool_tip p{
+    display: list-item;
+}
+
+
+
+
+/* ------------------button----------------- */
+.box form button{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 200px;
+    background-color: blueviolet;
+    color:#fff;
+    cursor: pointer;
+}
+.box form .link{
+    font-size: 16px;
+    margin:20px 0px;
+}
+.box form .link a{
+    color:blueviolet;
+    text-decoration: none;
+    font-weight: bold;
+}

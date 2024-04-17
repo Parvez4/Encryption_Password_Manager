@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2>Login Form</h2>
+      <form action="#" id="login_form">
+       
+        <div class="input_box">
+          <input type="text" required />
+          <label>Username</label>
+        </div>
+        <div class="input_box">
+          <input type="text" class="password" required />
+          <label>Password</label>
+        <button type="submit">Login</button>
+        <div class="link">Doesn't have an account?<a href="index.html">Register</a></div>
+      </form>
+    </div>
+  </body>
+  <script>
+    let form = document.getElementById("login_form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Please Register Yourself!!!");
+    });
+  </script>
+  </html>
